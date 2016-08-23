@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Movie Tickets Below</h1>
+      <form>
+        <label for="movie">Movie: </label>
+        <select class="form-control" id="movie">
+          <option>Suicide Squad</option>
+          <option>Harry Potter: Fantastic Beasts and Where to Find Them</option>
+          <option>Lion King</option>
+          <option>Forrest Gump</option>
+        </select>
+
+        <label for="age">Your Age: </label>
+        <select class="form-control" id="age">
+          <option>Under 18</option>
+          <option>18-60</option>
+          <option>60+</option>
+        </select>
+
+        <label for="time">What time? </label>
+        <select class="form-control" id="time">
+          <option>10:00</option>
+          <option>12:00</option>
+          <option>15:00</option>
+          <option>16:00</option>
+          <option>18:00</option>
+          <option>20:00</option>
+          <option>21:00</option>
+          <option>23:00</option>
+        </select>
+        <hr>
+        <button type="submit" class="btn btn-primary btn-lg">Purchase</button>
+      </form>
+      <div class="purchaseOutput">
+        <p>You purchased a ticket for <span id="movieName"></span> at <span id="movieTime"></span> for &#36;<span id="movieAmount"></span>.
+      </div>
+    </div>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src = "js/scripts.js"></script>
+  </body>
+</html>
